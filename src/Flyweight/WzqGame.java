@@ -38,8 +38,8 @@ class Chessboard extends MouseAdapter
             super.repaint();
             g = this.getGraphics();
             if (g == null) return;
-            g.setColor(Color.black);
-            g.drawRect(0, 0, this.getWidth(), this.getHeight());
+            g.setColor(Color.darkGray);
+            g.fillRect(0, 0, getWidth(), getHeight());
             g.setColor(Color.BLUE);
             g.drawRect(x, y, rw, rw);
             for (int i = 1; i < 10; i++)
